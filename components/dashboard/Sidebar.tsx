@@ -16,7 +16,7 @@ export default function Sidebar() {
   }, []);
 
   const nav = [
-    { label: "Dashboard", href: "/dashboard" },
+    // { label: "Dashboard", href: "/dashboard" },
     { label: "Content", href: "/dashboard/content" },
   ];
 
