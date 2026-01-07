@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 export default function RegisterPage() {
   const router = useRouter();
@@ -70,10 +71,16 @@ export default function RegisterPage() {
 
         <button
           onClick={submit}
-          className="w-full bg-indigo-600 text-white py-2 rounded"
+          className="w-full bg-black text-white py-2 rounded"
         >
           Register
         </button>
+        <span className="pt-4">
+          already have an account?{" "}
+          <Link href="/login" className="underline">
+            Login
+          </Link>
+        </span>
       </div>
     </div>
   );
